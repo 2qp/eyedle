@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E0C6F8F2DC5E86000F7A061 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA866032DC3AAEA003B5121 /* Core */; };
+		4E0C6FA32DC5F41900F7A061 /* OverlayFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 4E0C6FA22DC5F41900F7A061 /* OverlayFeature */; };
+		4E317AC42DC3D84600184822 /* Managers in Frameworks */ = {isa = PBXBuildFile; productRef = 4E317AC32DC3D84600184822 /* Managers */; };
+		4E317AC72DC3DD7800184822 /* PreferencesFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 4E317AC62DC3DD7800184822 /* PreferencesFeature */; };
+		4E70CE152DC6788A00EBFD6A /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 4EC3F1E32DC3F67800049089 /* Core */; };
+		4E75D92A2DC64B24006B60B5 /* Controllers in Frameworks */ = {isa = PBXBuildFile; productRef = 4E75D9292DC64B24006B60B5 /* Controllers */; };
+		4EA866072DC3AB89003B5121 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA866062DC3AB89003B5121 /* Services */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EA865E62DC3A651003B5121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EA865CD2DC3A650003B5121 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EA865D42DC3A650003B5121;
+			remoteInfo = eyedle;
+		};
+		4EA865F02DC3A651003B5121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EA865CD2DC3A650003B5121 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EA865D42DC3A650003B5121;
+			remoteInfo = eyedle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EA865D52DC3A650003B5121 /* eyedle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyedle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA865E52DC3A651003B5121 /* eyedleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eyedleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA865EF2DC3A651003B5121 /* eyedleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eyedleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4E70CE282DC6830400EBFD6A /* Exceptions for "eyedle" folder in "eyedle" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Execs/eyedle.swift,
+				Info.plist,
+			);
+			target = 4EA865D42DC3A650003B5121 /* eyedle */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4EA865D72DC3A650003B5121 /* eyedle */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4E70CE282DC6830400EBFD6A /* Exceptions for "eyedle" folder in "eyedle" target */,
+			);
+			path = eyedle;
+			sourceTree = "<group>";
+		};
+		4EA865E82DC3A651003B5121 /* eyedleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = eyedleTests;
+			sourceTree = "<group>";
+		};
+		4EA865F22DC3A651003B5121 /* eyedleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = eyedleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EA865D22DC3A650003B5121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E70CE152DC6788A00EBFD6A /* Core in Frameworks */,
+				4E0C6FA32DC5F41900F7A061 /* OverlayFeature in Frameworks */,
+				4E0C6F8F2DC5E86000F7A061 /* Core in Frameworks */,
+				4E75D92A2DC64B24006B60B5 /* Controllers in Frameworks */,
+				4E317AC72DC3DD7800184822 /* PreferencesFeature in Frameworks */,
+				4E317AC42DC3D84600184822 /* Managers in Frameworks */,
+				4EA866072DC3AB89003B5121 /* Services in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA865E22DC3A651003B5121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA865EC2DC3A651003B5121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EA865CC2DC3A650003B5121 = {
+			isa = PBXGroup;
+			children = (
+				4EA865D72DC3A650003B5121 /* eyedle */,
+				4EA865E82DC3A651003B5121 /* eyedleTests */,
+				4EA865F22DC3A651003B5121 /* eyedleUITests */,
+				4EA865D62DC3A650003B5121 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EA865D62DC3A650003B5121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EA865D52DC3A650003B5121 /* eyedle.app */,
+				4EA865E52DC3A651003B5121 /* eyedleTests.xctest */,
+				4EA865EF2DC3A651003B5121 /* eyedleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EA865D42DC3A650003B5121 /* eyedle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA865F92DC3A651003B5121 /* Build configuration list for PBXNativeTarget "eyedle" */;
+			buildPhases = (
+				4EA130472DD8AAF800A111AD /* ShellScript */,
+				4EA865D12DC3A650003B5121 /* Sources */,
+				4EA865D22DC3A650003B5121 /* Frameworks */,
+				4EA865D32DC3A650003B5121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4EA865D72DC3A650003B5121 /* eyedle */,
+			);
+			name = eyedle;
+			packageProductDependencies = (
+				4EA866032DC3AAEA003B5121 /* Core */,
+				4EA866062DC3AB89003B5121 /* Services */,
+				4E317AC32DC3D84600184822 /* Managers */,
+				4E317AC62DC3DD7800184822 /* PreferencesFeature */,
+				4EC3F1E32DC3F67800049089 /* Core */,
+				4E0C6FA22DC5F41900F7A061 /* OverlayFeature */,
+				4E75D9292DC64B24006B60B5 /* Controllers */,
+			);
+			productName = eyedle;
+			productReference = 4EA865D52DC3A650003B5121 /* eyedle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EA865E42DC3A651003B5121 /* eyedleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA865FC2DC3A651003B5121 /* Build configuration list for PBXNativeTarget "eyedleTests" */;
+			buildPhases = (
+				4EA865E12DC3A651003B5121 /* Sources */,
+				4EA865E22DC3A651003B5121 /* Frameworks */,
+				4EA865E32DC3A651003B5121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EA865E72DC3A651003B5121 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4EA865E82DC3A651003B5121 /* eyedleTests */,
+			);
+			name = eyedleTests;
+			packageProductDependencies = (
+			);
+			productName = eyedleTests;
+			productReference = 4EA865E52DC3A651003B5121 /* eyedleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EA865EE2DC3A651003B5121 /* eyedleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA865FF2DC3A651003B5121 /* Build configuration list for PBXNativeTarget "eyedleUITests" */;
+			buildPhases = (
+				4EA865EB2DC3A651003B5121 /* Sources */,
+				4EA865EC2DC3A651003B5121 /* Frameworks */,
+				4EA865ED2DC3A651003B5121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EA865F12DC3A651003B5121 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4EA865F22DC3A651003B5121 /* eyedleUITests */,
+			);
+			name = eyedleUITests;
+			packageProductDependencies = (
+			);
+			productName = eyedleUITests;
+			productReference = 4EA865EF2DC3A651003B5121 /* eyedleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EA865CD2DC3A650003B5121 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					4EA865D42DC3A650003B5121 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					4EA865E42DC3A651003B5121 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 4EA865D42DC3A650003B5121;
+					};
+					4EA865EE2DC3A651003B5121 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 4EA865D42DC3A650003B5121;
+					};
+				};
+			};
+			buildConfigurationList = 4EA865D02DC3A650003B5121 /* Build configuration list for PBXProject "eyedle" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EA865CC2DC3A650003B5121;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4EA866022DC3AAEA003B5121 /* XCLocalSwiftPackageReference "Sources/Core" */,
+				4EA866052DC3AB89003B5121 /* XCLocalSwiftPackageReference "Sources/Services" */,
+				4E317AC22DC3D84600184822 /* XCLocalSwiftPackageReference "Sources/Managers" */,
+				4E317AC52DC3DD7700184822 /* XCLocalSwiftPackageReference "Sources/PreferencesFeature" */,
+				4E0C6FA12DC5F41900F7A061 /* XCLocalSwiftPackageReference "Sources/OverlayFeature" */,
+				4E75D9262DC64B07006B60B5 /* XCLocalSwiftPackageReference "Sources/Controllers" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4EA865D62DC3A650003B5121 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EA865D42DC3A650003B5121 /* eyedle */,
+				4EA865E42DC3A651003B5121 /* eyedleTests */,
+				4EA865EE2DC3A651003B5121 /* eyedleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EA865D32DC3A650003B5121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA865E32DC3A651003B5121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA865ED2DC3A651003B5121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EA130472DD8AAF800A111AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/eyedle/Execs/eyedle.swift",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/eyedle/Execs/eyedle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftc -o \"${SCRIPT_OUTPUT_FILE_0}\" \"${SCRIPT_INPUT_FILE_0}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EA865D12DC3A650003B5121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA865E12DC3A651003B5121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA865EB2DC3A651003B5121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EA865E72DC3A651003B5121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EA865D42DC3A650003B5121 /* eyedle */;
+			targetProxy = 4EA865E62DC3A651003B5121 /* PBXContainerItemProxy */;
+		};
+		4EA865F12DC3A651003B5121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EA865D42DC3A650003B5121 /* eyedle */;
+			targetProxy = 4EA865F02DC3A651003B5121 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4EA865F72DC3A651003B5121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EA865F82DC3A651003B5121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4EA865FA2DC3A651003B5121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eyedle/eyedle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eyedle/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.kuku.eyedle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4EA865FB2DC3A651003B5121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eyedle/eyedle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eyedle/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.kuku.eyedle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4EA865FD2DC3A651003B5121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.kuku.eyedleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eyedle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eyedle";
+			};
+			name = Debug;
+		};
+		4EA865FE2DC3A651003B5121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.kuku.eyedleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eyedle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eyedle";
+			};
+			name = Release;
+		};
+		4EA866002DC3A651003B5121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.kuku.eyedleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = eyedle;
+			};
+			name = Debug;
+		};
+		4EA866012DC3A651003B5121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.kuku.eyedleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = eyedle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EA865D02DC3A650003B5121 /* Build configuration list for PBXProject "eyedle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA865F72DC3A651003B5121 /* Debug */,
+				4EA865F82DC3A651003B5121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EA865F92DC3A651003B5121 /* Build configuration list for PBXNativeTarget "eyedle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA865FA2DC3A651003B5121 /* Debug */,
+				4EA865FB2DC3A651003B5121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EA865FC2DC3A651003B5121 /* Build configuration list for PBXNativeTarget "eyedleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA865FD2DC3A651003B5121 /* Debug */,
+				4EA865FE2DC3A651003B5121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EA865FF2DC3A651003B5121 /* Build configuration list for PBXNativeTarget "eyedleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA866002DC3A651003B5121 /* Debug */,
+				4EA866012DC3A651003B5121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4E0C6FA12DC5F41900F7A061 /* XCLocalSwiftPackageReference "Sources/OverlayFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Sources/OverlayFeature;
+		};
+		4E317AC22DC3D84600184822 /* XCLocalSwiftPackageReference "Sources/Managers" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Sources/Managers;
+		};
+		4E317AC52DC3DD7700184822 /* XCLocalSwiftPackageReference "Sources/PreferencesFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Sources/PreferencesFeature;
+		};
+		4E75D9262DC64B07006B60B5 /* XCLocalSwiftPackageReference "Sources/Controllers" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Sources/Controllers;
+		};
+		4EA866022DC3AAEA003B5121 /* XCLocalSwiftPackageReference "Sources/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Sources/Core;
+		};
+		4EA866052DC3AB89003B5121 /* XCLocalSwiftPackageReference "Sources/Services" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Sources/Services;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E0C6FA22DC5F41900F7A061 /* OverlayFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OverlayFeature;
+		};
+		4E317AC32DC3D84600184822 /* Managers */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Managers;
+		};
+		4E317AC62DC3DD7800184822 /* PreferencesFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PreferencesFeature;
+		};
+		4E75D9292DC64B24006B60B5 /* Controllers */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Controllers;
+		};
+		4EA866032DC3AAEA003B5121 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		4EA866062DC3AB89003B5121 /* Services */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Services;
+		};
+		4EC3F1E32DC3F67800049089 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4EA865CD2DC3A650003B5121 /* Project object */;
+}
