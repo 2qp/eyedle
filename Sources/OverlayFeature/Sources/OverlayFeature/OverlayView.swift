@@ -31,7 +31,7 @@ public struct OverlayView: ActionableProtocol {
                 Spacer()
 
                 VStack(spacing: 24) {
-                    Text("⏳ Look Away!")
+                    Text("Look Away!")
                         .font(.largeTitle)
                         .foregroundColor(.white)
 
