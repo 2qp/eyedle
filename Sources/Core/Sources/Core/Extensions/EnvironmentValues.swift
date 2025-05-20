@@ -17,8 +17,9 @@ extension EnvironmentValues {
         set { self[LaunchAgentServiceKey.self] = newValue }
     }
 
-    public var overlayWindowService: (any OverlayWindowServiceProtocol)? {
-        get { self[OverlayWindowServiceKey.self] }
-        set { self[OverlayWindowServiceKey.self] = newValue }
+    public var fileManagerService: (any FileManagerServiceProtocol)? {
+        get { self[FileManagerServiceKey.self] }
+        set { self[FileManagerServiceKey.self] = newValue }
     }
+
 }

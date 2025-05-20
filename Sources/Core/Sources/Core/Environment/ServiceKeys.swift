@@ -15,6 +15,6 @@ public struct LaunchAgentServiceKey: EnvironmentKey {
     public static var defaultValue: (any LaunchAgentServiceProtocol)? { nil }
 }
 
-public struct OverlayWindowServiceKey: EnvironmentKey {
-    public static var defaultValue: (any OverlayWindowServiceProtocol)? { nil }
+public struct FileManagerServiceKey: EnvironmentKey {
+    public static var defaultValue: (any FileManagerServiceProtocol)? { nil }
 }

@@ -13,7 +13,8 @@ import SwiftUI
 @main
 struct eyedleApp: App {
     //
-    @Environment(\.openWindow) var openWindow /// mmm osx 15
+    @Environment(\.openWindow) var openWindow
+    /// mmm osx 15
     //
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
@@ -40,6 +41,7 @@ struct eyedleApp: App {
         .handlesExternalEvents(matching: ["preferences"])
         .environment(\.preferencesService, container.preferencesService)
         .environment(\.launchAgentService, container.launchAgentService)
+        .environment(\.fileManagerService, container.fileManagerService)
 
         MenuBarExtra("App Menu", systemImage: "eye") {
 

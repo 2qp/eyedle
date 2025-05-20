@@ -19,9 +19,12 @@ public final class AppContainer {
     public let windowManager: any WindowManagerProtocol
     public let notificationService: NotificationServiceProtocol
 
+    public lazy var fileManagerService: FileManagerServiceProtocol =
+        FileManagerService()
+
     public init() {
-        self.preferencesService = PreferencesService()
         self.notificationService = NotificationService()
+        self.preferencesService = PreferencesService()
         self.launchAgentService = LaunchAgentService()
 
         self.windowManager = WindowManager()

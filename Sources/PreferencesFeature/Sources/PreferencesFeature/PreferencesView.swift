@@ -22,6 +22,7 @@ public struct PreferencesView: View {
 
     @Environment(\.preferencesService) private var preferencesService
     @Environment(\.launchAgentService) private var launchAgentService
+    @Environment(\.fileManagerService) private var fileManagerService
 
     let prefKey: String = "Preferences"
 
@@ -78,8 +79,21 @@ public struct PreferencesView: View {
 
     }
 
+    public func prepareDirectories() {
+        // Define paths
+        let preScriptsDir = "documents/eyedle/pre"
+        let postScriptsDir = "documents/eyedle/post"
+
+        // Create the directories
+        let preDirCreated = fileManagerService?.createDirectoryIfNeeded(
+            at: preScriptsDir
+        )
+        let postDirCreated = fileManagerService?.createDirectoryIfNeeded(
+            at: postScriptsDir
+        )
+    }
+
     public func savePreferences(interval: Int, coolDown: Int, notifyTime: Int) {
-        print(interval)
 
         guard let agent = launchAgentService else { return }
         guard let preferencesService = preferencesService else { return }
@@ -108,6 +122,13 @@ public struct PreferencesView: View {
             )
         } catch {
             print("Installation failed: \(error.localizedDescription)")
+        }
+
+        //
+        do {
+            try prepareDirectories()
+        } catch {
+            print("Error preparing directories: \(error)")
         }
 
     }
