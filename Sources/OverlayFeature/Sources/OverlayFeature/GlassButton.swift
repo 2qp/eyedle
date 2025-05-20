@@ -18,13 +18,13 @@ public struct GlassButton: View {
         }) {
 
             HStack(spacing: 6) {
-                Text("Bypass")
+                Text("Skip")
                     .fontWeight(.semibold)
 
                 Image(systemName: "chevron.right.2")
             }
             .padding(.horizontal, 20)
-            .padding(.vertical, 12)
+            .padding(.vertical, 8)
             .background(.ultraThinMaterial)
             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
             .overlay(
