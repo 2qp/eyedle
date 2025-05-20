@@ -16,7 +16,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var notificationService: NotificationServiceProtocol?
     var preferencesService: (any PreferencesServiceProtocol)?
 
-
     func application(_ application: NSApplication, open urls: [URL]) {
         //
 
@@ -24,19 +23,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             //
 
             if url.host == "overlay" {
-                
-                
 
                 windowManager?.showOverlayWindow(content: {
 
-                    OverlayView().actionable {			
-//                        NSApplication.shared.terminate(nil)
+                    OverlayView().actionable {
+                        NSApplication.shared.terminate(nil)
                         self.windowManager?.dismissAllWidows()
 
-                    }.environment(
-                        \.preferencesService,
-                        self.preferencesService
-                    )
+                    }.environment(\.preferencesService, self.preferencesService)
                 })
 
             }
@@ -62,10 +56,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
 
-        
-    #if DEBUG
-    print("AppDelegate did finish launching")
-    #endif
+        #if DEBUG
+            print("AppDelegate did finish launching")
+        #endif
 
         notificationService?.requestPermission()
     }
