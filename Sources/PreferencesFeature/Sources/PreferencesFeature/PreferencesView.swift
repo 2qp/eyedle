@@ -32,16 +32,15 @@ public struct PreferencesView: View {
 
     public var body: some View {
 
-        VStack(spacing: 24) {
-            Text("🔁 Eyedle Config")
-                .font(.title2)
-                .fontWeight(.semibold)
+        VStack(spacing: 6) {
 
             Group {
                 InputRow(label: "Notify Before", value: $preferences.notifyTime)
                 InputRow(label: "Interval", value: $preferences.taskInterval)
                 InputRow(label: "Overlay Time", value: $preferences.coolDown)
             }
+
+            Spacer()
 
             VStack(spacing: 12) {
                 Button(action: {
@@ -53,7 +52,6 @@ public struct PreferencesView: View {
                 }) {
                     Text("Save Preferences & Enable Automation")
                         .fontWeight(.medium)
-
                 }
 
                 Button(action: disableAutomation) {
@@ -61,9 +59,25 @@ public struct PreferencesView: View {
                         .fontWeight(.medium)
                         .foregroundColor(.red)
                 }
-
             }
+
+            Spacer()
+
+            HStack {
+                Link(destination: URL(string: "https://github.com/2qp/eyedle")!)
+                {
+                    Image("github-mark")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 25, height: 25)
+                        .padding(.all, 8)
+                }.pointerStyle(.link)
+
+                Spacer()
+            }
+
         }
+
         .task {
             guard let preferencesService = preferencesService else { return }
 
