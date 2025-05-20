@@ -36,8 +36,10 @@ struct eyedleApp: App {
             PreferencesView()
 
         }
+        .windowLevel(.floating)
         .defaultSize(width: 480, height: 350)
         .defaultLaunchBehavior(.suppressed)
+        .restorationBehavior(.disabled)
         .handlesExternalEvents(matching: ["preferences"])
         .environment(\.preferencesService, container.preferencesService)
         .environment(\.launchAgentService, container.launchAgentService)
