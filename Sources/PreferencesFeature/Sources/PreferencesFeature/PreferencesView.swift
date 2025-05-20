@@ -12,9 +12,9 @@ import SwiftUI
 public struct PreferencesView: View {
 
     @State private var preferences: PreferencesProtocol = Preferences(
-        taskInterval: 0,
-        notifyTime: 0,
-        coolDown: 0,
+        taskInterval: 1200,
+        notifyTime: 10,
+        coolDown: 30,
         isAutomationEnabled: false
     )
     @State private var isLoading = false
@@ -51,19 +51,17 @@ public struct PreferencesView: View {
                         notifyTime: preferences.notifyTime
                     )
                 }) {
-                    Text("💾 Save Preferences & Enable Automation")
+                    Text("Save Preferences & Enable Automation")
                         .fontWeight(.medium)
 
-                        .padding()
-                        .background(Color.accentColor.opacity(0.2))
-                        .cornerRadius(8)
                 }
 
                 Button(action: disableAutomation) {
-                    Text("🛑 Disable Automation")
+                    Text("Disable Automation")
                         .fontWeight(.medium)
                         .foregroundColor(.red)
                 }
+
             }
         }
         .task {
