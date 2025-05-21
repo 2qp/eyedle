@@ -37,7 +37,7 @@ struct eyedleApp: App {
 
         }
         .windowLevel(.floating)
-        .defaultSize(width: 480, height: 350)
+        .defaultSize(width: 400, height: 300)
         .defaultLaunchBehavior(.suppressed)
         .restorationBehavior(.disabled)
         .handlesExternalEvents(matching: ["preferences"])
