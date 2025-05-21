@@ -36,10 +36,12 @@ To run **Eyedle**, you’ll need the following:
 
 ### Installation Steps
 
-```bash
-# 
+1. [Download the ZIP file from Releases](https://github.com/2qp/eyedle/releases)
+2. Extract the downloaded ZIP archive.
+3. Move the `.dmg` file to your `Documents` or `/Users/<your-username>/bin` folder.
+4. Open the `.dmg` file.
 
-```
+> do not run it directly from the *Downloads* to avoid App Translocation.
 
 ---
 
