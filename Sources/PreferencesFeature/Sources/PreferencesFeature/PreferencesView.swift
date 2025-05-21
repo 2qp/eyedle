@@ -26,23 +26,23 @@ public struct PreferencesView: View {
 
     let prefKey: String = "Preferences"
 
-    public init() {
-
-    }
+    public init() {}
 
     public var body: some View {
 
-        VStack(spacing: 6) {
+        VStack(alignment: .center, spacing: 24) {
 
-            Group {
+            // Input Fields
+            VStack(alignment: .leading, spacing: 16) {
                 InputRow(label: "Notify Before", value: $preferences.notifyTime)
                 InputRow(label: "Interval", value: $preferences.taskInterval)
                 InputRow(label: "Overlay Time", value: $preferences.coolDown)
             }
 
-            Spacer()
+            // Buttons
+            VStack(spacing: 8, ) {
 
-            VStack(spacing: 12) {
+                //
                 Button(action: {
                     savePreferences(
                         interval: preferences.taskInterval,
@@ -51,32 +51,42 @@ public struct PreferencesView: View {
                     )
                 }) {
                     Text("Save Preferences & Enable Automation")
-                        .fontWeight(.medium)
-                }
 
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+
+                //
                 Button(action: disableAutomation) {
                     Text("Disable Automation")
-                        .fontWeight(.medium)
-                        .foregroundColor(.red)
+
                 }
+                .buttonStyle(.bordered)
+                .controlSize(.large)
             }
+            .padding(.top, 8)
 
-            Spacer()
-
+            // Repository
             HStack {
+
+                Spacer()
+
                 Link(destination: URL(string: "https://github.com/2qp/eyedle")!)
                 {
                     Image("github-mark")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 25, height: 25)
-                        .padding(.all, 8)
+                        .frame(width: 24, height: 24)
+
                 }.pointerStyle(.link)
 
-                Spacer()
             }
 
         }
+        .padding(24)
+        .frame(width: 400, height: 300)
+
+        //
 
         .task {
             guard let preferencesService = preferencesService else { return }

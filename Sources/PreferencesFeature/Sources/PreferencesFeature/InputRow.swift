@@ -18,13 +18,12 @@ public struct InputRow: View {
 
     public var body: some View {
         HStack {
-            Text("\(label):")
-                .frame(width: 100, alignment: .leading)
+            Text(label)
+                .frame(width: 110, alignment: .leading)
 
             TextField("seconds", value: $value, format: .number)
                 .textFieldStyle(.roundedBorder)
-                .padding()
+
         }
-        .padding(.horizontal)
     }
 }
